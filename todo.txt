@@ -1,0 +1,12 @@
+GAME PLAN
+* install basic sintatra app
+* install unicorn
+- setup rack/unicorn config
+- setup nginx config
+- emulate nginx config with httpServer
+- setup Unicorn handler with netServer
+- succesfully pipe a request/response pair
+- create connect interface
+- add unicorn signal controllers
+- stand alone websocket server
+- express integration

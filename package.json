@@ -1,0 +1,5 @@
+{ "name" : "nodicorn"
+, "author" : "Ted Young"
+, "directories" : { "lib" : "./lib"}
+, "main" : "nodicorn.js"
+}
