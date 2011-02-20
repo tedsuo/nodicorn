@@ -1,20 +1,9 @@
-nodicorn = require('nodicorn');
+stable = require('unicorn-stable').createStable(1024);
 http = require('http');
 
+// point this at your unicorn socket
 path = '0.0.0.0';
 port = 8000;
 
-web_server =  http.createServer(function(req,res){
-  nodicorn.pipe({
-    req: req,
-    res: res,
-    path: path,
-    port: port
-    },
-    function( err, unicorn_response){
-     if(!err) res.pipe(unicorn_response);
-    }
-  ); 
-});
-
-webserver.listen( 80, 'localhost');
+webserver =  http.createServer( stable.connect(path,port) );
+webserver.listen( 8060, 'localhost');

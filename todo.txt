@@ -6,7 +6,8 @@ GAME PLAN
 - emulate nginx config with httpServer
 - setup Unicorn handler with netServer
 - succesfully pipe a request/response pair
-- create connect interface
+* create connect interface
 - add unicorn signal controllers
 - stand alone websocket server
-- express integration
+* express integration
+- add modules to npm
