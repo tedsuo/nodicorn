@@ -1,9 +1,15 @@
-stable = require('./unicorn-handler').createStable(1024);
 http = require('http');
 
 // point this at your unicorn socket
-path = '0.0.0.0';
-port = 8000;
+settings = {
+  host : '0.0.0.0',
+  port : 8000,
+  max_connections : 1024
+};
 
-webserver =  http.createServer( stable.connect(path,port) );
-webserver.listen( 8060, 'localhost');
+unicorn_pool = require('./unicorn-handler')
+                .createPool(settings);
+
+webserver =  http.createServer( 
+                unicorn_pool.connect() 
+             ).listen( 8060, 'localhost');
