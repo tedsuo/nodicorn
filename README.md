@@ -26,6 +26,7 @@ unicorn-hander lets you serve up rack applications from node.
 
 ##Included Hello World Sinatra App
 - Install sinatra
+
 cd path_to/unicorn-handler/example   
 unicorn -c unicorn.conf.rb -D   
 cd ..   
