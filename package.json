@@ -1,7 +1,13 @@
 { "name" : "unicorn-handler"
+,"description" : "connect middleware for serving up rack applications"
+,"keywords" : ["connect","unicorn","rack","middleware"]
 , "author" : "Ted Young"
 , "directories" : { "lib" : "./lib"}
-, "main" : "unicorn-handler.js"
+, "main" : "unicorn-handler"
 , "version" : "0.1.0"
-, "engines" : { "node" : ">=0.3.7 <0.5.0" }
+,"repository" : 
+  {"type" : "git"
+  , "url" : "http://github.com/tedsuo/unicorn-handler.git"
+  }
+, "engines" : { "node" : "0.4" }
 }
