@@ -1,4 +1,4 @@
-stable = require('unicorn-stable').createStable(1024);
+stable = require('./unicorn-handler').createStable(1024);
 http = require('http');
 
 // point this at your unicorn socket

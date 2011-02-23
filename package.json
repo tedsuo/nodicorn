@@ -1,5 +1,7 @@
-{ "name" : "nodicorn"
+{ "name" : "unicorn-handler"
 , "author" : "Ted Young"
 , "directories" : { "lib" : "./lib"}
-, "main" : "nodicorn.js"
+, "main" : "unicorn-handler.js"
+, "version" : "0.1.0"
+, "engines" : { "node" : ">=0.3.7 <0.5.0" }
 }
