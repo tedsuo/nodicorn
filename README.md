@@ -38,4 +38,4 @@ http://127.0.0.1:80/
 confirm it matches:
 http://0.0.0.0:8000/
 
-great success!!!
+Currently unicorn-handler only handles unicorns on tcp ports, and not unicorns on unix sockets. I hope to add unix sockets in the next version.
