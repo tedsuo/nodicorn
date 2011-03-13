@@ -7,8 +7,8 @@
 # a more verbose configuration using more features.
 
 listen 8000 # by default Unicorn listens on port 8080
-worker_processes 2 # this should be >= nr_cpus
+worker_processes 8 # this should be >= nr_cpus
 pid "unicorn.pid"
-stderr_path "unicorn.log"
-stdout_path "unicorn.log"
+#stderr_path "unicorn.log"
+#stdout_path "unicorn.log"
 

@@ -6,8 +6,8 @@ unicorn-hander lets you serve up rack applications from node.
 - Install unicorn
 
 ##Example Unicorn Server 
-
     http = require('http');
+    uni = require('unicorn-handler');
 
     // point this at your unicorn socket
     settings = {
@@ -16,8 +16,7 @@ unicorn-hander lets you serve up rack applications from node.
       max_connections : 1024
     };
 
-    unicorn_pool = require('unicorn-handler')
-                    .createPool(settings);
+    unicorn_pool = uni.createPool(settings);
 
     webserver =  http.createServer( 
                     unicorn_pool.connect() 
@@ -40,4 +39,4 @@ http://0.0.0.0:8000/
 
 ##To Do
 
-Currently unicorn-handler only handles unicorns on tcp ports, and not unicorns on unix sockets. I hope to add unix sockets in the next version.
+Currently unicorn-handler only handles unicorns on tcp ports, and not unicorns on unix sockets. I hope to add unix sockets in node 0.42 or greater.

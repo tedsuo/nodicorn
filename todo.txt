@@ -1,13 +1,25 @@
 GAME PLAN
-- install basic sintatra app
-- install unicorn
-- setup rack/unicorn config
-- setup nginx config
-- emulate nginx config with httpServer
-- setup Unicorn handler with netServer
-- succesfully pipe a request/response pair
-- create connect interface
+- profile resource consumption under load
 - add unicorn signal controllers
+  -graceful restart
+  -resource management
+    -memory
+    -cpu
+
+- machine learning management of resources
+  -replay logis to profile potenial max resource consumption
+  -pattern match against logs to anticipate changes in potential
+
+
+ICEBOX
+- email, event notifications 
+- rest interface
+- socket interface 
 - stand alone websocket server
-- express integration
 - add modules to npm
+- create connect interface
+  -static provider for '/public'
+  -vhost
+  
+- nginx config for file serving, upload handling
+
